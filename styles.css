@@ -14,3 +14,24 @@
      background: linear-gradient(to right,#79f1fc,#96a3e6);
      animation: colorChange 10s infinite alternate;
  }
+
+ @keyframes colorChange {
+    0%{
+        background: #e0c3fc;
+    }
+    100%{
+        background: #c3e8fc;
+    }
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 50%;
+}
