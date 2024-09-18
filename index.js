@@ -17,7 +17,7 @@ body.onload = function generateCaptcha(){
     }
 
     document.getElementById("_generator").value = captcha;
-    display.innerText = "Captcha Generator"
+    display.innerText = "Eugine's Captcha Generator"
 
 
 }
@@ -32,5 +32,20 @@ submit.onclick = function chekckInput(){
     }else{
         display.innerText = "Not-Matched😖";
     }
+
+}
+
+
+refresh.onclick = function refreshCaptcha(){
+
+    let newCaptcha = "";
+    for(let i = 0; i < captcha.length;i++){
+        const randomChar = char[Math.floor(Math.random() * char.length)]
+        newCaptcha += randomChar;
+    }
+    captcha = newCaptcha;
+    document.getElementById("_generator").value = captcha;
+    display.innerText = "Captcha Generator"
+
 
 }
