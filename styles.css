@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif; 
+ }
+ 
+ body{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     background: linear-gradient(to right,#79f1fc,#96a3e6);
+     animation: colorChange 10s infinite alternate;
+ }
